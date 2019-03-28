@@ -1,7 +1,7 @@
-# Valohai TensorFlow Examples
+# Valohai TensorFlow Example with data from Cpouta
 
 This repository implements handwritten digit detection using
-Tensorflow, based on [TensorFlow's example][ex].
+Tensorflow getting the data from cpouta container, based on [TensorFlow's example][ex].
 
 This serves as an example repository for the [Valohai machine learning platform][vh].
 
