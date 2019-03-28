@@ -6,13 +6,13 @@
     command: python batch_feature_extraction.py
     inputs:
       - name: training-set-images
-        default: https://valohai-mnist.s3.amazonaws.com/train-images-idx3-ubyte.gz
+        default: swift://f8a5dbc8033343aea820c139245afe13/MNIST_data/train-images-idx3-ubyte.gz
       - name: training-set-labels
-        default: https://valohai-mnist.s3.amazonaws.com/train-labels-idx1-ubyte.gz
+        default: swift://f8a5dbc8033343aea820c139245afe13/MNIST_data/train-labels-idx1-ubyte.gz
       - name: test-set-images
-        default: https://valohai-mnist.s3.amazonaws.com/t10k-images-idx3-ubyte.gz
+        default: swift://f8a5dbc8033343aea820c139245afe13/MNIST_data/t10k-images-idx3-ubyte.gz
       - name: test-set-labels
-        default: https://valohai-mnist.s3.amazonaws.com/t10k-labels-idx1-ubyte.gz
+        default: swift://f8a5dbc8033343aea820c139245afe13/MNIST_data/t10k-labels-idx1-ubyte.gz
 
 - step:
     name: Train model
@@ -36,13 +36,13 @@
         default: 0.9
     inputs:
       - name: training-set-images
-        default: https://valohai-mnist.s3.amazonaws.com/train-images-idx3-ubyte.gz
+        default: swift://f8a5dbc8033343aea820c139245afe13/MNIST_data/train-images-idx3-ubyte.gz
       - name: training-set-labels
-        default: https://valohai-mnist.s3.amazonaws.com/train-labels-idx1-ubyte.gz
+        default: swift://f8a5dbc8033343aea820c139245afe13/MNIST_data/train-labels-idx1-ubyte.gz
       - name: test-set-images
-        default: https://valohai-mnist.s3.amazonaws.com/t10k-images-idx3-ubyte.gz
+        default: swift://f8a5dbc8033343aea820c139245afe13/MNIST_data/t10k-images-idx3-ubyte.gz
       - name: test-set-labels
-        default: https://valohai-mnist.s3.amazonaws.com/t10k-labels-idx1-ubyte.gz
+        default: swift://f8a5dbc8033343aea820c139245afe13/MNIST_data/t10k-labels-idx1-ubyte.gz
 
 - step:
     name: Worker environment check
